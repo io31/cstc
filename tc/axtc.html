@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset='utf-8'>
+		<meta data-n-head="true" name="viewport"
+			content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no,viewport-fit=cover" />
+		<style>
+
+			
+			.titlebar {
+			  height: 24px;
+			  background-color: #e0e0e0;
+			  border-bottom: 1px solid #ccc;
+			  display: flex;
+			  justify-content: space-between;
+			  align-items: center;
+			  padding: 0px 8px;
+			  font-size: 12px;
+			  font-weight: bold;
+			}
+			
+			.buttons {
+			  display: flex;
+			  justify-content: flex-end;
+			  align-items: center;
+			}
+			
+			.buttons div {
+			  width: 12px;
+			  height: 12px;
+			  margin-left: 4px;
+			  border-radius: 50%;
+			}
+			
+			.red {
+			  background-color:#e55e5e;
+			}
+			
+			.yellow {
+			  background-color: #fcd537;
+			}
+			
+			.green {
+			  background-color: #51c039;
+			}
+			
+			.title {
+			  color: #333;
+			}
+			
+			.content {
+			  background-color: #fff;
+			  height: calc(100% - 24px);
+			  overflow: auto;
+			  padding: 8px;
+			  box-sizing: border-box;
+			    background-color: #fff;
+			    display: flex;
+			    flex-direction: column;
+			    align-items: center;
+			    justify-content: center;
+			    padding: 20px;
+			    position: relative;
+			}
+			.button {
+				background-color: #007aff;
+				border: none;
+				border-radius: 5px;
+				color: #fff;
+				font-size: 12px;
+				padding: 5px 5px;
+				margin-right: 0.625rem;
+				cursor: pointer;
+				outline: none;
+				float: right;
+			}
+			.button-container {
+			  width: 100%;
+			  height: 40px;
+			  margin-top: auto;
+			  display: flex;
+			  justify-content: flex-end;
+			  align-items: center;
+			}
+			button {
+			  width: 60px;
+			  height: 25px;
+			  margin-right: 10px;
+			  background-color: #333;
+			  color: #fff;
+			  border: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="window">
+		  <div class="titlebar">
+		    <div class="buttons">
+		      <div class="red"></div>
+		      <div class="yellow"></div>
+		      <div class="green"></div>
+		    </div>
+		    <div class="title">安欣资源网</div>
+		  </div>
+		  <div class="content">
+		    <!-- 窗口内容 -->
+			<p style="text-align: center;">欢迎使用</p>
+			<div class="button-container">
+				<button style="color:#fdfdfd;" class="button" onclick="app.open('https://obs9.top/')">更多资源</button>
+				<button style="color:#fdfdfd;" class="button" onclick="app.close()">进入软件</button>
+				
+			</div>
+			
+		  </div>
+		</div>
+
+	</body>
+	<script>
+		document.documentElement.style.webkitUserSelect = 'none';
+		document.documentElement.style.webkitTouchCallout = 'none';
+		/*
+		这一行代码就是关闭弹窗
+		可在本地实现关闭
+		然后网络远程修改代码就可以了
+		
+		app.close();*/
+	</script>
+</html>
